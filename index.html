@@ -95,7 +95,7 @@
             <span class="author-block">
               Aoqi Wu<sup>1*</sup>,</span>
             <span class="author-block">
-              Yifan Yang<sup>2</sup>,
+              Yifan Yang<sup>2†</sup>,
             </span>
             <span class="author-block">
               Xufang Luo<sup>2</sup>,
@@ -133,6 +133,13 @@
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>*</sup>Equal Contribution</span>
         </div>
+        <div class="is-size-5 publication-authors">
+          <span class="author-block"><sup>†</sup>Corresponding author
+              <a class="pl-2" href="mailto:yifanyang@microsoft.com">yifanyang@microsoft.com</a>
+
+          </span>
+
+      </div>
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
@@ -161,7 +168,7 @@
                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <!-- <i class="fab fa-huggingface"></i> -->
-                       <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="">
+                       <img src="static/images/huggingface_logo-noborder.svg" alt="">
                     </span>
                   <span>HF</span>
                   </a>
@@ -218,7 +225,7 @@
   </div>
 </section>
 
-  <div class="container is-max-desktop">
+<div class="container is-max-desktop">
   <div class="container is-max-widescreen">
       <div class="rows">
           <div class="rows is-centered ">
@@ -229,6 +236,25 @@
                     bilities of the LLM to better process dense captions, addressing the previous limitations of the pretrained CLIP
                     visual encoder and providing richer, higher-dimensional textual supervision. Experimental results demonstrate
                     that LLM2CLIP can make any SOTA CLIP model even more SOTA ever</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container is-max-desktop">
+  <div class="container is-max-widescreen">
+      <div class="rows">
+          <div class="rows is-centered ">
+              <div class="row is-full-width">
+              <div style="text-align: center;">
+                  <img src="static/images/radar.svg" alt="radar figure" style="width: 50%;">
+
+              </div>
+              <div style="text-align: center;">
+                <span ><b>LLM2CLIP can make SOTA CLIP even more SOTA ever.</b> </span>
+
+
+            </div>
               </div>
           </div>
       </div>
@@ -499,12 +525,12 @@ Therefore, directly using an LLM to guide CLIP’s visual encoder training is hi
                     We tested LLMLingua in various scenarios, including reasoning, in-context learning (ICL), summarization, and dialogue. The results in the GSM8K and Big-bench Hard Benchmark are listed below. Notably, within the GSM8K, LLMLingua was able to retain the reasoning capabilities of LLMs at a 20x compression ratio, with only a 1.5% loss in performance. For more detailed experimental results, please refer to the paper.<br/>
                 </p> -->
                 <div class="content has-text-justified">
-                  <table border="1" cellspacing="0" cellpadding="5" style="width: 100%; table-layout: fixed; text-align: center; font-size:14px;">
+                  <table border="1" cellspacing="0" cellpadding="5" style="width: 100%;  text-align: center; ">
                     <colgroup>
                       <col style="width: 10em;"> <!-- 第一列宽度为 15 倍字体大小 -->
                   </colgroup>
                     <caption>Retrieval Performance across Flickr30K-CN and COCO-CN.</caption>
-                    <thead>
+                    <thead style="font-size:14px;">
                         <tr>
                             <th rowspan="2">Methods</th>
                             <th colspan="6">Flickr-CN</th>
@@ -525,7 +551,7 @@ Therefore, directly using an LLM to guide CLIP’s visual encoder training is hi
                             <th>T2I@10</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody style="font-size:14px;">
                         <tr>
                             <td><strong>ViT-L/14-336</strong></td>
                             <td></td>
@@ -628,12 +654,12 @@ Therefore, directly using an LLM to guide CLIP’s visual encoder training is hi
                   We tested LLMLingua in various scenarios, including reasoning, in-context learning (ICL), summarization, and dialogue. The results in the GSM8K and Big-bench Hard Benchmark are listed below. Notably, within the GSM8K, LLMLingua was able to retain the reasoning capabilities of LLMs at a 20x compression ratio, with only a 1.5% loss in performance. For more detailed experimental results, please refer to the paper.<br/>
               </p> -->
               <div class="content has-text-justified">
-                  <table border="1" cellspacing="0" cellpadding="5" style="width: 100%; table-layout: fixed;text-align: center; font-size: 10px;">
+                  <table border="1" cellspacing="0" cellpadding="5" style="width: 100%; text-align: center; ">
                     <colgroup>
                       <col style="width: 10em;"> <!-- 第一列宽度为 15 倍字体大小 -->
                   </colgroup>
                     <caption>Performance of Llava 1.5. The best results are highlighted in <strong>bold</strong>. We explored whether LLM2CLIP could enhance complex image understanding tasks by modifying Llava's visual encoder.</caption>
-                    <thead>
+                    <thead style="font-size:10px;">
                         <tr>
                             <th rowspan="2"><strong>MODEL</strong></th>
                             <th colspan="5"><strong>VQA Datasets</strong></th>
@@ -660,7 +686,7 @@ Therefore, directly using an LLM to guide CLIP’s visual encoder training is hi
                             <th><strong>Video</strong></th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody style="font-size:10px;">
                         <tr style="color: gray;">
                             <td><strong>Llava (Paper)</strong></td>
                             <td>78.5</td>
